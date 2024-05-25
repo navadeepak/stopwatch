@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Hanken Grotesk", sans-serif;
+    text-transform:capitalize;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: snow;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(270deg,rgb(149, 216, 242),rgb(0, 122, 170));
+    width: 1150px;
+    height: 300px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    position: absolute;
+    right: 0;
+    bottom: 200px;
+}
+
+.container span{
+    margin-left: 10px;
+
+}
+
+#ampm{
+    font-size: 3rem;
+    align-items: end;
+}
+
+#head{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 100;
+    position: absolute;
+    top: 100px;
+    background: linear-gradient(145deg,rgb(149, 216, 242),rgb(0, 122, 170));
+    background-clip: text;
+}
+
+.button{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 20px;
+    height: auto;
+    width: 300px;
+}
+#start,#stop,#pause{
+    margin-right: 30px;
+}
+.text{
+    font-size:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sml{
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: end;
+    height: 60px;
+    padding: 0;
+}
+.col{
+    font-size: 30px;
+}
+#hr{
+    color: white;
+}
+#hr,#min,#sec,#count{
+    font-weight: 200;
+    transition: .5s;
+}
+.but{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.565);
+    transition: .5s;
+}
+.but:hover{
+    background-color:rgb(0, 122, 170);
+    color: white;
+    transition: .5s;
+}
+.times{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (max-width:1300px) {
+    .container{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: relative;
+    }
+    #wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background: linear-gradient(360deg,rgb(149, 216, 242),rgb(0, 122, 170));
+        width: 100vw !important;
+        height: 70vh !important;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+    }
+    #head{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 100;
+        color: black;
+        position: absolute;
+        top: 10vh;
+    }
+    #hr,#min,#sec,#count{
+        font-weight: 200 !important;
+        transition: .5s;
+    }
+    .col{
+        font-size: 30px !important;
+    }
+    #hr{
+        color: white;
+    }
+    .text{
+        font-size:40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sml{
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        color: white;
+        display: flex;
+        align-items: end;
+        height: 40px !important;
+        padding: 0;
+        padding-bottom: 0px !important;
+        margin-right: 0px !important;
+        
+    }
+    .times{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        justify-content: center;
+    }
+    .but{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        cursor: pointer;
+        background-color:rgb(0, 122, 170);
+        transition: .5s;
+        color: white;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 40px !important;
+        height: 10vh;
+        width: 100vw !important;
+        background-color: white;
+        margin-bottom: 10vh;
+    }
+}
